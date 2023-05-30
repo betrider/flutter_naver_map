@@ -23,6 +23,7 @@ class NaverMapViewOptions with NMessageableWithMap {
   final bool scrollGesturesEnable;
   final bool tiltGesturesEnable;
   final bool zoomGesturesEnable;
+  final bool useTextureView;
   final bool stopGesturesEnable;
   final double scrollGesturesFriction;
   final double zoomGesturesFriction;
@@ -58,6 +59,7 @@ class NaverMapViewOptions with NMessageableWithMap {
     this.scrollGesturesEnable = true,
     this.tiltGesturesEnable = true,
     this.zoomGesturesEnable = true,
+    this.useTextureView = true,
     this.stopGesturesEnable = true,
     this.scrollGesturesFriction = defaultScrollGesturesFriction,
     this.zoomGesturesFriction = defaultZoomGesturesFriction,
@@ -95,6 +97,7 @@ class NaverMapViewOptions with NMessageableWithMap {
         "scrollGesturesEnable": scrollGesturesEnable,
         "tiltGesturesEnable": tiltGesturesEnable,
         "zoomGesturesEnable": zoomGesturesEnable,
+        "useTextureView": useTextureView,
         "stopGesturesEnable": stopGesturesEnable,
         "scrollGesturesFriction": scrollGesturesFriction,
         "zoomGesturesFriction": zoomGesturesFriction,
@@ -134,6 +137,7 @@ class NaverMapViewOptions with NMessageableWithMap {
     bool? scrollGesturesEnable,
     bool? tiltGesturesEnable,
     bool? zoomGesturesEnable,
+    bool? useTextureView,
     bool? stopGesturesEnable,
     double? scrollGesturesFriction,
     double? zoomGesturesFriction,
@@ -172,6 +176,7 @@ class NaverMapViewOptions with NMessageableWithMap {
         scrollGesturesEnable: scrollGesturesEnable ?? this.scrollGesturesEnable,
         tiltGesturesEnable: tiltGesturesEnable ?? this.tiltGesturesEnable,
         zoomGesturesEnable: zoomGesturesEnable ?? this.zoomGesturesEnable,
+        useTextureView: useTextureView ?? this.useTextureView,
         stopGesturesEnable: stopGesturesEnable ?? this.stopGesturesEnable,
         scrollGesturesFriction:
             scrollGesturesFriction ?? this.scrollGesturesFriction,
@@ -232,6 +237,7 @@ class NaverMapViewOptions with NMessageableWithMap {
           scrollGesturesEnable == other.scrollGesturesEnable &&
           tiltGesturesEnable == other.tiltGesturesEnable &&
           zoomGesturesEnable == other.zoomGesturesEnable &&
+          useTextureView == other.useTextureView &&
           stopGesturesEnable == other.stopGesturesEnable &&
           scrollGesturesFriction == other.scrollGesturesFriction &&
           zoomGesturesFriction == other.zoomGesturesFriction &&
@@ -268,6 +274,7 @@ class NaverMapViewOptions with NMessageableWithMap {
       scrollGesturesEnable.hashCode ^
       tiltGesturesEnable.hashCode ^
       zoomGesturesEnable.hashCode ^
+      useTextureView.hashCode ^
       stopGesturesEnable.hashCode ^
       scrollGesturesFriction.hashCode ^
       zoomGesturesFriction.hashCode ^

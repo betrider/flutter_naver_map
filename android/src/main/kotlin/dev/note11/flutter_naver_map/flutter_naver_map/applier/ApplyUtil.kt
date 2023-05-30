@@ -39,6 +39,7 @@ internal object ApplyUtil {
             "scrollGesturesEnable" to { it::setScrollGesturesEnable },
             "tiltGesturesEnable" to { it::setTiltGesturesEnable },
             "zoomGesturesEnable" to { it::setZoomGesturesEnable },
+            "useTextureView" to { it::setUseTextureView },
             "stopGesturesEnable" to { it::setStopGesturesEnable },
             "scrollGesturesFriction" to { it::setScrollGesturesFriction },
             "zoomGesturesFriction" to { it::setZoomGesturesFriction },

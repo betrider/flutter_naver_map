@@ -64,6 +64,9 @@ internal class ApplyUtil {
         "zoomGesturesEnable": {
             $0.setZoomGesturesEnable
         },
+        "useTextureView​": {
+            $0.setUseTextureView​
+        },
         "stopGesturesEnable": {
             $0.setStopGesturesEnable
         },

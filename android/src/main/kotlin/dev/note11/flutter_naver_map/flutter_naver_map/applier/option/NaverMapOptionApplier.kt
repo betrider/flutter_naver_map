@@ -18,6 +18,7 @@ internal interface NaverMapOptionApplier {
     fun setScrollGesturesEnable(rawEnable: Any)
     fun setTiltGesturesEnable(rawEnable: Any)
     fun setZoomGesturesEnable(rawEnable: Any)
+    fun setUseTextureView​(rawEnable: Any)
     fun setStopGesturesEnable(rawEnable: Any)
     fun setScrollGesturesFriction(rawFriction: Any)
     fun setZoomGesturesFriction(rawFriction: Any)

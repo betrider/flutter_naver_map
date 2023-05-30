@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_naver_map/flutter_naver_map.dart';
 
 import '../../design/custom_widget.dart';
-import '../../util/location_util.dart';
 import '../../util/alert_util.dart';
+import '../../util/location_util.dart';
 
 class NaverMapViewOptionsExample extends StatelessWidget {
   final NaverMapViewOptions options;
@@ -184,6 +184,12 @@ class NaverMapViewOptionsExample extends StatelessWidget {
                   value: options.zoomGesturesEnable,
                   onChanged: (v) =>
                       options = options.copyWith(zoomGesturesEnable: v)),
+              TextSwitcher(
+                  title: "지도 렌더링",
+                  description: ".useTextureView​",
+                  value: options.useTextureView,
+                  onChanged: (v) =>
+                      options = options.copyWith(useTextureView: v)),
               TextSwitcher(
                   title: "회전 제스처",
                   description: ".rotationGesturesEnable",
