@@ -186,7 +186,7 @@ class NaverMapViewOptionsExample extends StatelessWidget {
                       options = options.copyWith(zoomGesturesEnable: v)),
               TextSwitcher(
                   title: "지도 렌더링",
-                  description: ".useTextureView​",
+                  description: ".useTextureView",
                   value: options.useTextureView,
                   onChanged: (v) =>
                       options = options.copyWith(useTextureView: v)),

@@ -90,8 +90,8 @@ class NaverMapOptionApplierImpl(
         options.zoomGesturesEnabled(rawEnable.asBoolean())
     }
 
-    override fun setUseTextureView​(rawEnable: Any) {
-        options.useTextureView​(rawEnable.asBoolean())
+    override fun setUseTextureView(rawEnable: Any) {
+        options.useTextureView(rawEnable.asBoolean())
     }
 
     override fun setStopGesturesEnable(rawEnable: Any) {

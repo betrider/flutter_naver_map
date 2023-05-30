@@ -93,7 +93,7 @@ internal class NaverMapApplierImpl: NaverMapOptionApplier {
         mapView.isZoomGestureEnabled = asBool(rawEnable)
     }
 
-    func setUseTextureView​(_ rawEnable: Any) {
+    func setUseTextureView(_ rawEnable: Any) {
         mapView.isUseTextureView = asBool(rawEnable)
     }
 
