@@ -93,9 +93,9 @@ internal class NaverMapApplierImpl: NaverMapOptionApplier {
         mapView.isZoomGestureEnabled = asBool(rawEnable)
     }
 
-    func setUseTextureView(_ rawEnable: Any) {
-        mapView.isUseTextureView = asBool(rawEnable)
-    }
+    // func setUseTextureView(_ rawEnable: Any) {
+    //     mapView.isUseTextureView = asBool(rawEnable)
+    // }
 
     func setStopGesturesEnable(_ rawEnable: Any) {
         mapView.isStopGestureEnabled = asBool(rawEnable)

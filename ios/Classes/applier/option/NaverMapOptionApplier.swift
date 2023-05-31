@@ -16,7 +16,7 @@ internal protocol NaverMapOptionApplier {
     func setScrollGesturesEnable(_ rawEnable: Any)
     func setTiltGesturesEnable(_ rawEnable: Any)
     func setZoomGesturesEnable(_ rawEnable: Any)
-    func setUseTextureView(_ rawEnable: Any)
+    // func setUseTextureView(_ rawEnable: Any)
     func setStopGesturesEnable(_ rawEnable: Any)
     func setScrollGesturesFriction(_ rawFriction: Any)
     func setZoomGesturesFriction(_ rawFriction: Any)
