@@ -97,7 +97,9 @@ class NaverMapViewOptions with NMessageableWithMap {
         "scrollGesturesEnable": scrollGesturesEnable,
         "tiltGesturesEnable": tiltGesturesEnable,
         "zoomGesturesEnable": zoomGesturesEnable,
-        "useTextureView": useTextureView,
+        if(Platform.isAndroid)...{
+          "useTextureView": useTextureView,
+        },
         "stopGesturesEnable": stopGesturesEnable,
         "scrollGesturesFriction": scrollGesturesFriction,
         "zoomGesturesFriction": zoomGesturesFriction,
